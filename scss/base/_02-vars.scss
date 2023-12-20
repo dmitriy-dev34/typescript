@@ -1,0 +1,52 @@
+:root {
+  --wrapper-width: 1920px;
+  --container-width: 1280px;
+
+  --font-default: "Onest", sans-serif;
+  --font-title: "Russo One", sans-serif;
+  --fz-body: 22px;
+  --lh-body: 166%;
+
+  --fz-1: clamp(2.125rem, 1.307rem + 4.09vw, 4.375rem);
+  --fz-2: clamp(2rem, 1.818rem + 0.91vw, 2.5rem);
+  --fz-3: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+  --fw-bold: 700;
+  --fz-small: clamp(1rem, 0.864rem + 0.68vw, 1.375rem);
+
+  --bg-body: #f2f2f2;
+
+  --bg-yellow: #f1d4aa url("../img/top-figure_left.jpg") no-repeat top;
+
+  --bg-section-dark: var(--dark-color) url("../img/bg-paper_dark.jpg") no-repeat
+    center;
+
+  --dark-color: #161517;
+  --yellow-color: #f1d4aa;
+  --red-color: #d05e4d;
+
+  --main-color: #d05e4d;
+
+  --blue-color: #1166b7;
+
+  --text-color: var(--dark-color);
+  --title-color: var(--dark-color);
+  --animation-fade: fade 0.3s ease-in-out;
+
+  --sect-padding: 120px 0;
+
+  // media
+  @media (max-width: 1024px) {
+    --sect-padding: 80px 0;
+  }
+
+  @media (max-width: 600px) {
+    --fz-body: 18px;
+    --lh-body: 150%;
+  }
+
+  @media (max-width: 480px) {
+    --fz-body: 16px;
+    --lh-body: 150%;
+    --sect-padding: 50px 0;
+  }
+}

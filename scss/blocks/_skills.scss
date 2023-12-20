@@ -1,0 +1,141 @@
+.skills {
+  position: relative;
+  z-index: 2;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__items {
+    list-style: none;
+    padding: 120px 0;
+    display: flex;
+    gap: 102px;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  &__item-label {
+    display: inline-block;
+    margin-bottom: 32px;
+  }
+
+  &__item-title {
+    font-family: var(--font-title);
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  &__img {
+    position: relative;
+    top: 0;
+    right: -5%;
+  }
+
+  &__h4 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .skills__content {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .skills__col {
+    width: 80%;
+  }
+
+  .skills__items {
+    justify-content: space-between;
+    width: 100%;
+    gap: 32px;
+    padding: 80px 0;
+  }
+
+  .skills__img {
+    right: inherit;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills {
+    padding-top: 280px;
+  }
+}
+
+@media (max-width: 800px) {
+  .skills {
+    padding-top: 230px;
+  }
+
+  .skills__col {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    padding-top: 140px;
+  }
+
+  .skills__col {
+    width: 100%;
+  }
+
+  .skills__items {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills__content {
+    gap: 50px;
+  }
+  .skills__items {
+    flex-direction: column;
+  }
+
+  .skills__item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .skills__item-title {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 0;
+    position: relative;
+    &::before {
+      content: "от";
+      color: var(--dark-color);
+      font-size: 16px;
+      margin-right: 10px;
+      opacity: 0.4;
+    }
+  }
+
+  .skills__item-label {
+    display: none;
+    // margin-bottom: 10px;
+  }
+
+  .skills__h4 {
+    margin-bottom: 20px;
+  }
+}

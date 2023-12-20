@@ -1,0 +1,228 @@
+@import "./01-normalize";
+@import "./02-vars";
+
+/* ------------------- Default -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  min-width: 320px;
+  background: var(--bg-body);
+  color: var(--text-color);
+  font-family: var(--font-default);
+  font-size: var(--fz-body);
+  line-height: 1.5;
+  color: var(--text-color);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page__body {
+  &.lock-scroll {
+    overflow: hidden;
+  }
+}
+
+// Прижание footer к низу
+.page__wrapper {
+  background: #fff;
+  width: 100%;
+  max-width: var(--wrapper-width);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page__main {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media (max-width: 1440px) {
+    max-width: 1280px;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 800px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+.title-h1,
+.title-h2,
+.title-h3,
+.title-h4,
+.title-h5,
+.title-h6 {
+  color: var(--title-color);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: var(--font-default);
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: none;
+  font-size: inherit;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  color: inherit;
+
+  &::placeholder {
+    color: #666;
+  }
+}
+
+strong {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+// плавное появление контента через анимацию
+// animation: fade 0.3s ease-in-out (задать элементу который нужно показывать плавно;
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.title-1 {
+  font-family: var(--font-title);
+  font-size: var(--fz-1);
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.title-2 {
+  font-family: var(--font-title);
+  font-size: var(--fz-2);
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.title-3 {
+  font-family: var(--font-title);
+  font-size: var(--fz-3);
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-size: 700;
+}
+
+.text-blue {
+  color: var(--blue-color);
+}
+
+.text-yellow {
+  color: var(--yellow-color);
+}
+
+.text-red {
+  color: var(--red-color);
+}
+
+.sm-title {
+  font-size: 20px;
+  line-height: 44px;
+}
+
+.section-padding {
+  padding: var(--sect-padding);
+}
+
+.bg-dark {
+  width: 100%;
+  background: var(--bg-section-dark);
+}

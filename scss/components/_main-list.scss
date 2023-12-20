@@ -1,0 +1,30 @@
+.main-list {
+  list-style: none;
+  li {
+    position: relative;
+    padding-left: 28px;
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: var(--blue-color);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &.dot-blue li::before {
+    background: var(--blue-color);
+  }
+
+  &.dot-red li::before {
+    background: var(--main-color);
+  }
+}

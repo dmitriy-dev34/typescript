@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+	<link rel="icon" type="image/png" href="./favicon/favicon.png">
+	<title>TypeScript разработчик</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+	<!-- CSS & JS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.min.css">
+	<script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+	<div class="page__wrapper">
+		<!-- #btnScrollTop -->
+		<button type="button" id="btnScrollTop" title="Наверх"></button>
+
+		<!-- Main -->
+		<main class="page__main">
+
+			<!-- Hero -->
+			<section class="hero">
+				<!-- Header -->
+				<div class="header">
+					<div class="container header__container">
+						<div class="header__left">
+							<nav class="menu header__menu">
+								<div class="menu__close"></div>
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#skills" class="menu__link">Кто нам нужен</a></li>
+									<li class="menu__item"><a href="#offers" class="menu__link">Что ты получишь</a></li>
+									<li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+								</ul>
+							</nav>
+							<button type="button" class="btn-burger header__burger"><span class="btn-burger__line"></span></button>
+						</div>
+						<div class="header__right">
+							<a href="#" target="_blank" class="btn btn-stroke header__btn">Отправить резюме</a>
+						</div>
+					</div>
+				</div>
+				<!-- End Header -->
+				<div class="container hero__container">
+					<div class="hero__img" data-aos="fade-right">
+						<picture>
+							<source srcset="./img/hero-img.webp" type="image/webp">
+							<img loading="lazy" src="./img/hero-img.jpg" width="809" height="730" alt="">
+						</picture>
+					</div>
+					<div class="hero__content" data-aos="fade-left">
+						<h1 class="title-2 hero__title">Мы ищем<br> именно тебя!!!</h1>
+						<a href="#" class="btn" target="_blank">Отправить резюме</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Skills -->
+			<section class="section-padding skills" id="skills">
+				<div class="container">
+					<div class="skills__content">
+						<div class="skills__col">
+							<h2 class="title-3 skills__title">Что нам нужно от тебя:</h2>
+							<ul class="skills__items" data-aos="fade-up">
+								<li class="skills__item">
+									<span class="skills__item-label">от</span>
+									<h3 class="skills__item-title text-red">7 лет</h3>
+									<p class="skills__item-descr">Опыт работы</p>
+								</li>
+								<li class="skills__item">
+									<span class="skills__item-label">от</span>
+									<h3 class="skills__item-title text-red">5 лет</h3>
+									<p class="skills__item-descr">Опыт кодинга <br>на <strong>TypeScript</strong></p>
+								</li>
+								<li class="skills__item">
+									<span class="skills__item-label">от</span>
+									<h3 class="skills__item-title text-red">3 лет</h3>
+									<p class="skills__item-descr">Опыт кодинга <br>на <strong>JavaScript</strong></p>
+								</li>
+							</ul>
+
+							<div class="skills__features" data-aos="fade" data-aos-delay="400">
+								<h4 class="skills__h4">Будет большим плюсом:</h4>
+								<div class="main-list dot-blue skills__features-list">
+									<li>Высшее профильное образование;</li>
+									<li>Умение искать и находить нестандартные решения;</li>
+									<li>Опыт работы с системами непрерывной интеграции.</li>
+								</div>
+							</div>
+						</div>
+						<div class="skills__col">
+							<div class="skills__img" data-aos="fade-down">
+								<img loading="lazy" src="./img/skills-img.svg" width="611" height="573" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Offers -->
+			<section class="bg-dark section-padding offers" id="offers">
+				<div class="container">
+					<h2 class="title-3 offers__title text-yellow" data-aos="fade">что мы предлагаем:</h2>
+					<div class="offers__content">
+						<div class="offers__img" data-aos="fade-right" data-aos-delay="400">
+							<picture>
+								<source srcset="./img/offers-img.webp" type="image/webp">
+								<img loading="lazy" src="./img/offers-img.jpg" width="646" height="487" alt="">
+							</picture>
+						</div>
+						<div class="main-list dot-red offers__list" data-aos="fade-left" data-aos-delay="400">
+							<li>Достойная заработная плата <br> <span class="text-blue">от 5 к до 10 к</span> американских енотов;</li>
+							<li>Профессиональный коллектив – веселый и дружный;</li>
+							<li>Полная занятость, удаленная работа;</li>
+							<li>Адаптивное оформление: самозанятые, ИП и другие варианты;</li>
+							<li>Курсы и обучение – за счет компании;</li>
+							<li>Отсутствие бюрократии, простая и прозрачная схема работы;</li>
+							<li>Широкий спектр интересных задач.</li>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section class="section-padding about" id="about">
+				<div class="container">
+					<div class="about__top">
+						<div class="about__top-content" data-aos="fade-up">
+							<h2 class="title-3 about__title text-blue">О нас:</h2>
+							<p class="about__text text-blue">Mы команда профессионалов, работающая в сфере искусственного интеллекта и поисковых алгоритмов, которую проивестировали американские фонды
+								в 2017 году.</p>
+						</div>
+						<div class="about__img" data-aos="fade" data-aos-delay="400">
+							<picture>
+								<source srcset="./img/about-img.webp" type="image/webp">
+								<img loading="lazy" src="./img/about-img.jpg" width="561" height="636" alt="">
+							</picture>
+						</div>
+					</div>
+					<div class="about__bottom">
+						<ul class="main-list about__bottom-list" data-aos="fade-up" data-aos-delay="600">
+							<li><strong>ИИ.</strong> Исследовательская лаборатория в сфере обработки естественного языка - NLP. Проинвестирована американскими фондами. Направлению больше 4 лет. Более $30 млн потрачено только на GPU. </li>
+							<li><strong>Инвестиции.</strong> В портфеле имеются успешные play2earn игры, крипто-академия, фарминг, стейкинг, ходл, трейдинг. </li>
+							<li><strong>Блокчейн.</strong> Только в технологическом разрезе распределенных реестров. Без ICO и токенов. В крипте с 2014 года. Майнили еще на видеокартах. Сайдчейн и ончейн решения. </li>
+							<li><strong>Трафиковые сайты.</strong> Суммарная ежемесячная аудитория наших сайтов - более 200 млн человек!!! из 40 стран мира. Являемся стратегическим партнером Google AdSense более 10 лет.</li>
+						</ul>
+						<div class="about__img-mob">
+							<picture>
+								<source srcset="./img/about-img.webp" type="image/webp">
+								<img loading="lazy" src="./img/about-img.jpg" width="561" height="636" alt="">
+							</picture>
+						</div>
+						<h3 class="title-3 about__bottom-title text-red" data-aos="fade-left" data-aos-delay="800">Мы ищем опытных веб-разработчиков от уровня middle!</h3>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="bg-dark cta">
+				<div class="container cta__top">
+					<h2 class="title-1 cta__title text-yellow" data-aos="fade-right">Хочешь к нам?</h2>
+					<h3 class="title-1 cta__subtitle text-yellow" data-aos="fade-left" data-aos-delay="600">Cкорее заполняй форму!</h3>
+				</div>
+				<div class="cta-mob">
+					<div class="cta-mob__img">
+						<picture>
+							<source srcset="./img/cta-img.webp" type="image/webp">
+							<img loading="lazy" src="./img/cta-img.jpg" class="" width="1424" height="440" alt="">
+						</picture>
+					</div>
+					<div class="cta-mob__footer">
+						<a href="#" target="_blank" class="btn btn-blue">Форма здесь!</a>
+					</div>
+				</div>
+				<div class="cta__bottom">
+					<div class="cta__bottom-bg">
+						<picture>
+							<source srcset="./img/cta-img.webp" type="image/webp">
+							<img loading="lazy" src="./img/cta-img.jpg" class="" width="1424" height="440" alt="">
+						</picture>
+					</div>
+					<div class="container cta__bottom-container">
+						<a href="#" class="btn btn-blue cta__bottom-btn" data-aos="zoom-in" data-aos-delay="100">Форма здесь!</a>
+					</div>
+				</div>
+				<div class="section-padding bottom-nav">
+					<div class="container bottom-nav__container">
+						<nav class="menu bottom-menu">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#skills" class="menu__link">Кто нам нужен</a></li>
+								<li class="menu__item"><a href="#offers" class="menu__link">Что ты получишь</a></li>
+								<li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<p></p>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Анимация -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			AOS.init({
+				offset: 250,
+				duration: 1000,
+				easing: 'linier',
+				delay: 100,
+				once: true,
+				disable: function () {
+					var maxWidth = 800;
+					return window.innerWidth < maxWidth;
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

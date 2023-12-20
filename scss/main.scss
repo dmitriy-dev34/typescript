@@ -1,0 +1,25 @@
+@import "./base/03-default";
+
+/* ------------------- LIBS -------------------- */
+// @import "./libs/swiper";
+
+/* ------------------- COMPONENTS -------------------- */
+// @import "./components/";
+@import "./components/btn-top";
+@import "./components/btn";
+@import "./components/btn-burger";
+@import "./components/menu";
+@import "./components/main-list";
+
+/* ------------------- BLOCKS -------------------- */
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/skills";
+@import "./blocks/offers";
+@import "./blocks/about";
+@import "./blocks/cta";
+
+@import "./blocks/footer";
+
+/* ------------------- PAGES -------------------- */
+@import "./pages/404";

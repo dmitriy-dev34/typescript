@@ -1,0 +1,44 @@
+.error-404 {
+  padding: var(--sect-padding);
+  padding-top: 30px;
+
+  &::after {
+    bottom: 0;
+  }
+
+  .hero__container {
+    grid-template-columns: 7fr 5fr;
+  }
+
+  .hero__content {
+    max-width: 600px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .error-404 .hero__container {
+    grid-template-columns: 1fr;
+  }
+
+  .error-404::after {
+    bottom: -31%;
+    top: inherit;
+  }
+}
+
+@media (max-width: 600px) {
+  .error-404::after {
+    bottom: -26%;
+  }
+}
+
+@media (max-width: 390px) {
+  .error-404::after {
+    bottom: -17%;
+  }
+
+  .error-404 .hero__title {
+    font-size: 24px;
+  }
+}
